@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment files
+.env*.local
+.env
+.env.production
+.env.development
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Submission & OS generated files
+*.zip
+*.pdf
+.DS_Store
+*.log
+report.html
+report_assets/
+*.py

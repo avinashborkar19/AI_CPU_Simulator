@@ -1,0 +1,66 @@
+/* app/tokens.css */
+/* Single source of truth for all color, typography, spacing, and animation tokens */
+
+:root {
+  /* Surface & Background */
+  --bg-primary: #070809;
+  --bg-surface: #0E1013;
+  --bg-surface-elevated: #15181D;
+  --bg-surface-hover: #1C2027;
+  --bg-input: #0B0D0F;
+
+  /* Crisp Borders */
+  --border-subtle: #1B1F26;
+  --border-medium: #272D36;
+  --border-strong: #3B4350;
+  --border-accent: rgba(255, 92, 0, 0.45);
+
+  /* Typography Colors */
+  --text-primary: #F2F4F7;
+  --text-secondary: #9DA6B3;
+  --text-muted: #5C6573;
+  --text-inverse: #070809;
+
+  /* Single Accent: Solar Ember (strictly outside 240-320° hue) */
+  --accent: #FF5C00;
+  --accent-hover: #FF701E;
+  --accent-glow: rgba(255, 92, 0, 0.12);
+  --accent-subtle: rgba(255, 92, 0, 0.08);
+
+  /* Task Colors (Distinct warm/green/amber hues; zero blue or purple) */
+  --task-p1: #F59E0B; /* Amber */
+  --task-p2: #10B981; /* Emerald */
+  --task-p3: #E11D48; /* Coral Crimson */
+  --task-p4: #84CC16; /* Lime */
+  --task-p5: #D97706; /* Warm Ochre */
+  --task-idle-bg: #181B20;
+  --task-idle-hatch: #2A2F38;
+
+  /* Typography Families */
+  --font-display: var(--font-syne), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), "Cascadia Code", "Courier New", monospace;
+
+  /* Radius */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Motion & Easing */
+  --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
