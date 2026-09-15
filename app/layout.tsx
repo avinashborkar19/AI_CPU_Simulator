@@ -1,24 +1,27 @@
 import type { Metadata } from 'next';
-import { Syne, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
+import { Orbitron, Rajdhani, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import SmoothScroll from '@/components/SmoothScroll';
 
-const syne = Syne({
+const orbitron = Orbitron({
   subsets: ['latin'],
-  variable: '--font-syne',
+  variable: '--font-ai-display',
   display: 'swap',
+  weight: ['400', '600', '700', '800', '900'],
 });
 
-const jakarta = Plus_Jakarta_Sans({
+const rajdhani = Rajdhani({
   subsets: ['latin'],
-  variable: '--font-jakarta',
+  variable: '--font-ai-body',
   display: 'swap',
+  weight: ['400', '500', '600', '700'],
 });
 
 const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
-  variable: '--font-jetbrains',
+  variable: '--font-ai-mono',
   display: 'swap',
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${jakarta.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${orbitron.variable} ${rajdhani.variable} ${jetbrains.variable}`}>
       <body>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
